@@ -10,7 +10,7 @@ public class CardOrderTest {
     @Test
     void shouldEnterValidData() {
         open("http://localhost:7777");
-        $("[data-test-id='name'] inpu").setValue("Петров Сергей");
+        $("[data-test-id='name'] input").setValue("Петров Сергей");
         $("[data-test-id='phone'] input").setValue("+79084567848");
         $("[data-test-id='agreement']").click();
         $("[type='button']").click();
