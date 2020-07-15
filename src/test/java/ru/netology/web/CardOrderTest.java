@@ -22,7 +22,7 @@ public class CardOrderTest {
         $("[data-test-id='name'] input").setValue("Петров Сергей");
         $("[data-test-id='phone'] input").setValue("+79084567848");
         $("[type='button']").click();
-        $("[data-test-id='agreement']").shouldHave(text("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
+        $(".input_invalid[data-test-id='agreement']").shouldHave(text("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
     }
 
     @Test
